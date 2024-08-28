@@ -1,0 +1,27 @@
+@Bibosio.WebApp_HostAddress = https://localhost:7035
+@Id = f3580301-b6ea-4a0d-a03f-791f333de5da
+
+GET {{Bibosio.WebApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{Bibosio.WebApp_HostAddress}}/todo
+Content-Type: application/json
+
+{
+  "name": "First task",
+  "description": "My some task"
+}
+###
+
+PUT {{Bibosio.WebApp_HostAddress}}/todo
+Content-Type: application/json
+
+{
+  "id": "451b5ba2-1fd8-48cc-b8f0-c6175c856c4a",
+  "name": "First task",
+  "description": "hohohohoho",
+  "isComplete": true
+}
+###
